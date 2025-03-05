@@ -7,6 +7,8 @@
 <head>
     <title>Hi, My name is Nihar. Welcome to my Personal Website!</title>
     <link rel="stylesheet" href="style.css" />
+    <!--Typewriter script from https://github.com/mattboldt/typed.js-->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 
 <body>
@@ -22,8 +24,18 @@
     <section class="text">
         <div class="homeText">
             <h1>Hi, I'm Nihar Patel</h1>
-            <h2 id="typewriterText">I am an <span style="color: aqua;">Aspiring Developer</span> </h2>
+            <h2 id="typewriterText">I am <span class="element" style="color: aqua;"></span> </h2>
         </div>
+        <!--Script works by taking the element ".element" from the script, and by embedding it into the text source where we want it to run (h2 in this instance), as a span class, it pastes the strings, one at a time as type-writer text in a loop-->
+        <script>
+            var typed = new Typed('.element', {
+                strings: ['an Aspiring Developer.', 'a Problem-Solver.', 'a Cost Analyst.', 'a Gamer.'],
+                typeSpeed: 60,
+                backSpeed: 60,
+                loop: true
+            });
+
+        </script>
 
     </section>
 
