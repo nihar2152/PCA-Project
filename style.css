@@ -5,7 +5,7 @@ body {
 /* Style Header */
 .header {
     position: fixed;
-    top: 5px;
+    top: 25px;
     left: 5px;
     width: 100%;
     padding: 15px;
@@ -23,6 +23,7 @@ body {
     text-decoration: none;
     /* Remove Underlines under Header <a> tags */
     font-weight: 400;
+
 }
 
 .navigate a:hover {
@@ -56,6 +57,7 @@ body {
     font-size: 40px;
 }
 
+/* Styling Home Image Portrait */
 .homeImage {
     display: flex;
     flex-wrap: wrap;
@@ -74,6 +76,6 @@ body {
     top: 40%;
     transform: translateY(-45%);
     background-color: transparent;
-    filter: brightness(.85) contrast(1.15);
+    filter: brightness(0.9) contrast(1.15);
     clip-path: inset(0px 0px 170px 0px);
 }
