@@ -68,7 +68,7 @@ body {
 
 .homeImage img {
     height: auto;
-    max-width: 850px;
+    max-width: 900px;
     border-radius: 45%;
     float: center;
     position: absolute;
@@ -78,4 +78,16 @@ body {
     background-color: transparent;
     filter: brightness(0.9) contrast(1.15);
     clip-path: inset(0px 0px 170px 0px);
+}
+
+/* About Me Page Styling */
+
+.aboutMeText {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    color: antiquewhite;
+    padding-top: 80px;
 }
