@@ -42,16 +42,38 @@ body {
 }
 
 .homeText {
-    margin-top: -50%;
-    margin-left: 100px;
+    margin-top: -20%;
+    margin-left: 200px;
 
 }
 
 .homeText h1 {
-    font-size: 60px;
+    font-size: 75px;
     margin-bottom: 20px;
 }
 
 .homeText h2 {
-    font-size: 30px;
+    font-size: 40px;
+}
+
+.homeImage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.homeImage img {
+    height: auto;
+    max-width: 850px;
+    border-radius: 45%;
+    float: center;
+    position: absolute;
+    right: 150px;
+    top: 40%;
+    transform: translateY(-45%);
+    background-color: transparent;
+    filter: brightness(.85) contrast(1.15);
+    clip-path: inset(0px 0px 170px 0px);
 }
