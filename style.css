@@ -49,9 +49,15 @@ body {
 }
 
 .homeText {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 3;
     margin-top: -8%;
-    margin-left: 225px;
-
+    margin-left: 0px;
 }
 
 /* .lightbar {
@@ -90,7 +96,7 @@ body {
     transform: translateY(-50%);
     max-width: 60%;
     height: auto;
-    z-index: 1;
+    z-index: 10;
     /*justify-content: center;
     align-items: center;
     text-align: center;
@@ -130,6 +136,7 @@ body {
 }
 
 .aboutMeText {
+    position: relative;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -138,9 +145,11 @@ body {
     color: antiquewhite;
     padding-top: 75px;
     margin-top: 25px;
+    z-index: 10;
 }
 
 .myImages {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -148,8 +157,10 @@ body {
     max-width: 750px;
     margin: auto;
     padding-top: 0px;
-    margin-top: -825px;
+    margin-top: -850px;
+    z-index: 20;
 }
+
 
 .myImages div {
     width: 45%;
@@ -171,38 +182,51 @@ body {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1000;
+    z-index: 10000;
     left: 50%;
     top: 50%;
-    /* center the text box */
     transform: translate(-50%, -50%);
-    /* to avoid the box being too wide */
-    width: auto !important;
-    max-width: 70vw;
-    background: #02101b;
-    padding: 15px;
+    width: 500px !important;
+    /* Force fixed width */
+    height: auto;
+    background: rgba(2, 16, 27, 0.95);
+    padding: 20px;
     box-shadow: 0px 5px 20px aqua;
-    text-align: left;
+    text-align: center;
     border-radius: 10px;
     font-size: 18px;
     line-height: 1.5;
-    white-space: normal;
     font-family: 'Courier New', Courier, monospace;
-    word-wrap: break-word;
-    /*flex-direction: column;*/
     color: aqua;
-    align-items: stretch;
-    display: inline-block;
-
+    opacity: 1;
+    visibility: visible;
+    min-height: 200px;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .modal-content {
-    display: block;
-    width: auto !important;
-    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100% !important;
+    /* Fills entire modal */
+    max-width: 100% !important;
+    height: auto;
+    padding: 10px !important;
+    /* Reduced padding to prevent spacing issues */
+    overflow: hidden;
+    /* Gives spacing without overflow */
     /*align-items: flex-start;
     flex-direction: column; */
 }
+
 
 .close {
     position: absolute;
@@ -217,7 +241,6 @@ body {
 .close:hover {
     color: aqua
 }
-
 
 
 
