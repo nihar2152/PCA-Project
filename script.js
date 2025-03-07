@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Listeners/Messages for the images
     document.getElementById("image1").addEventListener("click", function () {
-        showPopup(`Shadowing in Atlanta was one of the best experiences for my role at Power. As a Cost Analyst, I handle accounting entries and help manage projects across multiple territories, Atlanta being one of them. Getting to meet the people behind the emails and Connect messages, visiting an install, and spending time with the Installers that I process payments for really gave me a clearer picture of how my work ties into the RIO's operations and how our roles coorelate.`);
+        showPopup(`Shadowing in Atlanta was one of the best experiences for my role at Power. As a Cost Analyst, I handle accounting entries and help manage projects across multiple territories, Atlanta being one of them. Getting to meet the people behind the emails and Connect messages, visiting an install, and spending time with the Installers that I process payments for really gave me a clearer picture of how my work ties into the RIO's operations and how our roles correlate.`);
     });
 
     document.getElementById("image2").addEventListener("click", function () {
