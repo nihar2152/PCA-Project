@@ -37,7 +37,7 @@ body {
 
 /* Home Text Styling */
 .text {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     padding: 0;
