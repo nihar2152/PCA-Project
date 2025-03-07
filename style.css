@@ -17,6 +17,11 @@ body {
     /* Overlapping weight */
 }
 
+.navigate {
+    position: relative;
+    overflow: visible;
+}
+
 .navigate a {
     color: antiquewhite;
     font-size: 25px;
@@ -24,7 +29,6 @@ body {
     text-decoration: none;
     /* Remove Underlines under Header <a> tags */
     font-weight: 400;
-
 }
 
 .navigate a:hover {
@@ -56,6 +60,34 @@ body {
 
 .homeText h2 {
     font-size: 40px;
+}
+
+/* .lightbar {
+    position: absolute;
+    top: 0%;
+    /*left: -85%; use pixels instead */
+/*left: 200px;
+    width: 200px;
+    height: 100px;
+    background: linear-gradient(90 deg, rgba(0, 247, 255, 0)0%, rgba(0, 247, 255, 1)50%, rgba(0, 247, 255, 0)100%);
+    /* to make the navigation bar partially transparent */
+/*opacity: .9;
+    filter: blur(18px) brightness(3);
+    /* Create a smoother and softer glow */
+/*animation: move-light 5s ease-in-out infinite;
+    /* lightbar animation context */
+/*z-index: 200 !important;
+}
+
+/* @keyframes is used to define animations with the animatin property */
+/*@keyframes move-light {
+    0% {
+        left: 200px;
+    }
+
+    100% {
+        left: 100%;
+    }
 }
 
 /* Styling Home Image Portrait */
@@ -134,6 +166,66 @@ body {
     object-fit: cover;
     /* To avoid distortion */
 }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    /* center the text box */
+    transform: translate(-50%, -50%);
+    /* to avoid the box being too wide */
+    width: auto !important;
+    max-width: 70vw;
+    background: #02101b;
+    padding: 15px;
+    box-shadow: 0px 5px 20px aqua;
+    text-align: left;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    white-space: normal;
+    font-family: 'Courier New', Courier, monospace;
+    word-wrap: break-word;
+    /*flex-direction: column;*/
+    color: aqua;
+    align-items: stretch;
+    display: inline-block;
+
+}
+
+.modal-content {
+    display: block;
+    width: auto !important;
+    max-width: 100%;
+    /*align-items: flex-start;
+    flex-direction: column; */
+}
+
+.close {
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: aqua;
+}
+
+.close:hover {
+    color: aqua
+}
+
+.modal {
+    outline: 2px solid red;
+}
+
+.modal-content {
+    outline: 2px solid blue;
+}
+
+
 
 /* ATL img */
 /*.atlShadow img {
