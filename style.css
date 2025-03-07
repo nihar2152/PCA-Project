@@ -44,8 +44,8 @@ body {
 }
 
 .homeText {
-    margin-top: -20%;
-    margin-left: 200px;
+    margin-top: -8%;
+    margin-left: 225px;
 
 }
 
@@ -65,20 +65,26 @@ body {
     justify-content: flex-start;
     align-items: center;
     text-align: center;
+    width: 100%;
+    /* to make the IMG responsive to window size */
+    height: auto;
+    padding: 20px;
 }
 
 .homeImage img {
     height: auto;
-    max-width: 900px;
+    max-width: 90%;
+    /* avoid overflow */
     border-radius: 45%;
-    float: center;
-    position: absolute;
-    right: 150px;
-    top: 40%;
-    transform: translateY(-45%);
     background-color: transparent;
     filter: brightness(0.9) contrast(1.15);
     clip-path: inset(0px 0px 170px 0px);
+    object-fit: cover;
+    /* float: center;
+    position: absolute;
+    right: 150px;
+    top: 40%;
+    transform: translateY(-45%); */
 }
 
 /* About Me Page Styling */
@@ -97,7 +103,7 @@ body {
     align-items: flex-start;
     text-align: center;
     color: antiquewhite;
-    padding-top: 100px;
+    padding-top: 75px;
     margin-top: 25px;
 }
 
@@ -109,7 +115,7 @@ body {
     max-width: 750px;
     margin: auto;
     padding-top: 0px;
-    margin-top: -875px;
+    margin-top: -825px;
 }
 
 .myImages div {
