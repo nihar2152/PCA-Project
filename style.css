@@ -37,7 +37,7 @@ body {
 
 /* Home Text Styling */
 .text {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     padding: 0;
@@ -45,6 +45,7 @@ body {
     margin: 0;
     float: inline-start;
     color: antiquewhite;
+    font-size: 40px;
 }
 
 .homeText {
@@ -83,26 +84,35 @@ body {
 
 /* Styling Home Image Portrait */
 .homeImage {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 60%;
+    height: auto;
+    z-index: 1;
+    /*justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
     /* to make the IMG responsive to window size */
-    height: auto;
-    padding: 20px;
+    /*padding: 20px; */
 }
 
 .homeImage img {
+    width: 100%;
     height: auto;
-    max-width: 90%;
-    /* avoid overflow */
     border-radius: 45%;
     background-color: transparent;
     filter: brightness(0.9) contrast(1.15);
     clip-path: inset(0px 0px 170px 0px);
-    object-fit: cover;
+    /*left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    max-width: 60%;
+    /* avoid overflow */
+    /*object-fit: cover;
     /* float: center;
     position: absolute;
     right: 150px;
@@ -207,6 +217,8 @@ body {
 .close:hover {
     color: aqua
 }
+
+
 
 
 /* ATL img */
