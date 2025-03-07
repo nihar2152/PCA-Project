@@ -208,15 +208,6 @@ body {
     color: aqua
 }
 
-.modal {
-    outline: 2px solid red;
-}
-
-.modal-content {
-    outline: 2px solid blue;
-}
-
-
 
 /* ATL img */
 /*.atlShadow img {
